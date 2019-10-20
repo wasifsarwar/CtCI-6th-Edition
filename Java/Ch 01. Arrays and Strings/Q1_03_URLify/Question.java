@@ -26,6 +26,31 @@ public class Question {
 		}
 	}
 	
+	public static String replacespaces(String str, int trueLength) {
+	  
+	    if (trueLength == 0) {
+	        return null;
+	    }
+	    str=  truncate(str);
+	    return str.replace(" ","%20");
+	}
+	
+	public static String truncate(String s) {
+	   int i = 0;
+	   while (s.charAt(i) == ' ' ) {
+	       i++;
+	   }
+	   s = s.substring(i);
+	   
+	   i = s.length() -1 ;
+	   while (s.charAt(i) == ' ') {
+	       i--;
+	   }
+	   return s.substring(0, i+1);
+	   
+	   
+	}
+	
 	public static int findLastCharacter(char[] str) {
 		for (int i = str.length - 1; i >= 0; i--) {
 			if (str[i] != ' ') {
@@ -40,6 +65,8 @@ public class Question {
 		char[] arr = str.toCharArray();
 		int trueLength = findLastCharacter(arr) + 1;
 		replaceSpaces(arr, trueLength);	
-		System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
+//		System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
+//		System.out.println(replacespaces(str, str.length()));
+		System.out.println(replacespaces("",0));
 	}
 }
