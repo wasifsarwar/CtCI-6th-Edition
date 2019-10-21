@@ -1,5 +1,7 @@
 package Q1_01_Is_Unique;
 
+import java.util.HashSet;
+
 public class QuestionA {
 	public static boolean isUniqueChars(String str) {
 		if (str.length() > 128) {
@@ -14,10 +16,28 @@ public class QuestionA {
 		return true;
 	}
 	
+	public static boolean isUnique(String str) {
+	    HashSet<Character> unique = new HashSet<Character>();
+	    
+	    for (char c: str.toCharArray()) {
+	        if (unique.contains(c)) {
+	            return false;
+	        }
+	        unique.add(c);
+	    }
+	    
+	    return true;
+	}
+	
+	
 	public static void main(String[] args) {
 		String[] words = {"abcde", "hello", "apple", "kite", "padle"};
 		for (String word : words) {
 			System.out.println(word + ": " + isUniqueChars(word));
+		}
+		System.out.println("Wasif's unique solution: -->>>");
+		for (String word: words) {
+		    System.out.println(word + ": " + isUnique(word));
 		}
 	}
 
