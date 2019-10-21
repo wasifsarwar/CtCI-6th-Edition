@@ -26,6 +26,10 @@ public class Question {
 		}
 	}
 	
+	/*
+	 * Custom Solution for urlify
+	 * Truncate spaces in the front and the back
+	 */
 	public static String replacespaces(String str, int trueLength) {
 	  
 	    if (trueLength == 0) {
@@ -61,12 +65,12 @@ public class Question {
 	}
 	
 	public static void main(String[] args) {
-		String str = "Mr John Smith    ";
+		String str = "  Mr John Smith                 ";
 		char[] arr = str.toCharArray();
 		int trueLength = findLastCharacter(arr) + 1;
 		replaceSpaces(arr, trueLength);	
-//		System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
-//		System.out.println(replacespaces(str, str.length()));
-		System.out.println(replacespaces("",0));
+		System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
+		System.out.println(replacespaces(str, str.length()));
+//		System.out.println(replacespaces("",0));
 	}
 }
