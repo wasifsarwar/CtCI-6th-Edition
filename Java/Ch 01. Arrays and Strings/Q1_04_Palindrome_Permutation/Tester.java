@@ -9,7 +9,7 @@ public class Tester {
 							"Lleve",
 							"Tacotac",
 							"asda"};
-		System.out.println("Leona's solution:");
+		
 		for (String s : strings) {
 			boolean a = QuestionA.isPermutationOfPalindrome(s);
 			boolean b = QuestionB.isPermutationOfPalindrome(s);
@@ -17,9 +17,9 @@ public class Tester {
 			boolean leona = LeonaSolution.isPermutationOfPalindrome(s);
 			System.out.println(s);
 			if (a == b && b == c) {
-				System.out.println("Agree: " + a);
+				System.out.println("Agree for book: " + a);
 			} else {
-				System.out.println("Disagree: " + a + ", " + b + ", " + c);
+				System.out.println("Disagree for book: " + a + ", " + b + ", " + c);
 			}
 	
 			if (leona) {
