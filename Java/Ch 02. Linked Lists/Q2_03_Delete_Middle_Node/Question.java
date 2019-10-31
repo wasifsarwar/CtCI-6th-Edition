@@ -14,11 +14,20 @@ public class Question {
 		n.next = next.next; 
 		return true;
 	}
+
+	public static void deleted(LinkedListNode n) {
+		if (n != null || n.next != null) {
+			LinkedListNode next = n.next;
+			n.data = next.data;
+			n.next = next.next;
+		}
+
+	}
 	
 	public static void main(String[] args) {
 		LinkedListNode head = AssortedMethods.randomLinkedList(20, 0, 10);
 		System.out.println(head.printForward());
-		deleteNode(head.next.next.next.next); // delete node 4
+		deleted(head.next.next.next.next); // delete node 4
 		System.out.println(head.printForward());
 	}
 
