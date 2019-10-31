@@ -2,7 +2,7 @@ package Q_Educative_BinarySearch;
 
 public class Question {
 
-    // review this over and over again :/ 
+    // review this over and over again :/
 
     public static int binSearch(int[] arr, int key) {
         int low = 0;
