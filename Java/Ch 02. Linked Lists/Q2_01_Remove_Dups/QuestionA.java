@@ -20,18 +20,21 @@ public class QuestionA {
 
 
 	public static void deleteDupsWasif(LinkedListNode n) {
-		HashSet<Integer>  unique = new HashSet<Integer>();
-		LinkedListNode runner = null;
-		while(n != null) {
-			if (unique.contains(n.data)) {
-				runner.next = n.next;
-			} else {
-				unique.add(n.data);
-				runner = n;
 
+
+		HashSet<Integer>  unique = new HashSet<Integer>();
+		LinkedListNode runner = n;
+		unique.add(runner.data);
+		while (runner != null && runner.next != null) {
+			if (!unique.contains(runner.next.data)) {
+				unique.add(runner.next.data);
+				runner = runner.next;
+			} else {
+				runner.next = runner.next.next;
 			}
-			n = n.next;
 		}
+
+
 
 	}
 	
