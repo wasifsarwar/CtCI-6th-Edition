@@ -17,6 +17,23 @@ public class QuestionA {
 			n = n.next;
 		}
 	}
+
+
+	public static void deleteDupsWasif(LinkedListNode n) {
+		HashSet<Integer>  unique = new HashSet<Integer>();
+		LinkedListNode runner = null;
+		while(n != null) {
+			if (unique.contains(n.data)) {
+				runner.next = n.next;
+			} else {
+				unique.add(n.data);
+				runner = n;
+
+			}
+			n = n.next;
+		}
+
+	}
 	
 	public static void main(String[] args) {	
 		LinkedListNode first = new LinkedListNode(0, null, null); //AssortedMethods.randomLinkedList(1000, 0, 2);
@@ -29,7 +46,7 @@ public class QuestionA {
 			first = second;
 		}
 		System.out.println(head.printForward());
-		deleteDups(head);
+		deleteDupsWasif(head);
 		System.out.println(head.printForward());
 	}
 }

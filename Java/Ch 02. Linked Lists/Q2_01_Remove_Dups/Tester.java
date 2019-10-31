@@ -19,8 +19,8 @@ public class Tester {
 		LinkedListNode cloneA = head.clone();
 		LinkedListNode cloneB = head.clone();
 		LinkedListNode cloneC = head.clone();
-		QuestionA.deleteDups(cloneA);
-		QuestionA.deleteDups(cloneB);
+		QuestionA.deleteDupsWasif(cloneA);
+		QuestionA.deleteDupsWasif(cloneB);
 		QuestionA.deleteDups(cloneC);
 		
 		System.out.println(cloneA.printForward());

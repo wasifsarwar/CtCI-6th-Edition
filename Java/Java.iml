@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Big O" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 01. Arrays and Strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 02. Linked Lists" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 03. Stacks and Queues" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 04. Trees and Graphs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 05. Bit Manipulation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 06. Math and Logic Puzzles" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 07. Object-Oriented Design" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 08. Recursion and Dynamic Programming" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 09. Scalability and Memory Limits" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 10. Sorting and Searching" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 13. Java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 15. Threads and Locks" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 16. Moderate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ch 17. Hard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CtCILibrary" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Introduction" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
