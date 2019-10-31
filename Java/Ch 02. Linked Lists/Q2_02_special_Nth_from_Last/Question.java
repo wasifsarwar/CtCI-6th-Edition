@@ -6,7 +6,7 @@ package Q2_02_special_Nth_from_Last;
 
     From educative.io :)
     https://www.educative.io/courses/coderust-hacking-the-coding-interview/mryR
-    
+
  */
 
 
