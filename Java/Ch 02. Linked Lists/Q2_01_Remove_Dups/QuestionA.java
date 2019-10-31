@@ -18,7 +18,7 @@ public class QuestionA {
 		}
 	}
 
-
+	// educative.io solution
 	public static void deleteDupsWasif(LinkedListNode n) {
 
 
