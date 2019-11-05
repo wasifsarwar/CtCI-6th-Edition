@@ -12,7 +12,7 @@ package Q2_02_special_Nth_from_Last;
 
 import CtCILibrary.AssortedMethods;
 import CtCILibrary.LinkedListNode;
-import Q7_07_Chat_Server.System;
+
 
 public class Question {
 
@@ -52,8 +52,9 @@ public class Question {
 //            String nodeValue = node == null ? "null" : "" + node.data;
 //            System.out.println(i + ": " + nodeValue);
 //        }
+        System.out.println("before " + head.printForward());
         head = nthFromLast(head,7);
-        System.out.println(head.printForward());
+        System.out.println("after " + head.printForward());
 
     }
 
