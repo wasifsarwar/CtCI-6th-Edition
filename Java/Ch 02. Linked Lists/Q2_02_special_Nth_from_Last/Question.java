@@ -12,6 +12,7 @@ package Q2_02_special_Nth_from_Last;
 
 import CtCILibrary.AssortedMethods;
 import CtCILibrary.LinkedListNode;
+import Q7_07_Chat_Server.System;
 
 public class Question {
 
